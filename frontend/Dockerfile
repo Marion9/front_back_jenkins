@@ -1,7 +1,7 @@
 FROM node:16
-WORKDIR /app
-COPY package.json /app
+WORKDIR /front
+COPY frontend/package.json /front
 RUN npm install
-COPY ./ /app
+COPY frontend/ /front
 EXPOSE 3000
 CMD ["npm", "start"]
