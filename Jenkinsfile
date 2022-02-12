@@ -1,14 +1,14 @@
 pipeline {
     agent any
     stages {
-        stage('Build NodeJs app'){
+        stage('Build Docker image'){
             steps {
                 bat "docker-compose build"  
             }
         }
         stage('Running test'){
             steps {
-                bat "cd frontend"
+                bat "npm install jest"
                 bat "npm test --prefix ./frontend/"
             }
         }
