@@ -8,10 +8,11 @@ pipeline {
         }
         stage('Running test'){
             steps {
-                bat "npm install"
                 bat "npm install react-scripts --save"
                 git([url:'https://github.com/Marion9/front_back_jenkins.git', branch:'main'])
-                bat "cd frontend"
+                dir('frontend') {
+                    bat "cd"
+                }
                 bat "dir"
                 //bat "npm test --prefix ./frontend/"
             }
