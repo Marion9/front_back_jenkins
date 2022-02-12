@@ -1,3 +1,5 @@
 # front_back_jenkins
 
-Due to connections problems, I did not have the time to end the tp. Moreover, I could not check that the link between github and Jenkins was really working. Meanwhile, it was running alone on Docker and I use the same first command in the Jenkinsfile as last time and it worked well so I assume that was working too.
+For some reasons that I do not understand since 7pm, I could not link git and jenkins.
+![image](https://user-images.githubusercontent.com/33229273/153726684-d9acc3da-08be-4b6a-ad40-63afc795f0c6.png)
+Perhaps, even if I do not push on release I suppose that my code could work due to some try, my "git add ." add node_modules directory so I decided to I stopped it. I could never try this part later due to my problem. 
