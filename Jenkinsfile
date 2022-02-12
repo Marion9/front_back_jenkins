@@ -11,10 +11,8 @@ pipeline {
                 bat "npm install react-scripts --save"
                 git([url:'https://github.com/Marion9/front_back_jenkins.git', branch:'main'])
                 dir('frontend') {
-                    bat "cd"
+                    bat "npm test"
                 }
-                bat "dir"
-                //bat "npm test --prefix ./frontend/"
             }
         }
         stage('Pushing new release on git'){
@@ -22,7 +20,7 @@ pipeline {
                 bat "git config --global user.email 'bartiermarion@gmail.com'"
                 bat "git config --global user.name 'Marion9'"
                 bat 'git add .'
-                bat 'git commit -m "new release"'
+                bat 'git commit -m "new release from jenkins"'
                 bat "git push origin release"
             }
         }
