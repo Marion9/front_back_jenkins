@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Running test'){
             steps {
-                bat "npm install jest"
+                bat "npm install"
                 bat "npm test --prefix ./frontend/"
             }
         }
