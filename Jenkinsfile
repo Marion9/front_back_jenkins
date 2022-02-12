@@ -9,7 +9,7 @@ pipeline {
         stage('Running test'){
             steps {
                 bat "cd frontend"
-                bat "npm test"
+                bat "npm test --prefix ./frontend/"
             }
         }
         stage('Pushing new release on git'){
