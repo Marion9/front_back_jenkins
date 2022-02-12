@@ -10,6 +10,7 @@ pipeline {
             steps {
                 bat "npm install"
                 bat "npm install react-scripts --save"
+                git 'https://github.com/Marion9/front_back_jenkins'
                 bat "npm test --prefix ./frontend/"
             }
         }
