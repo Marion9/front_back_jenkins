@@ -9,6 +9,7 @@ pipeline {
         stage('Running test'){
             steps {
                 bat "npm install"
+                bat "npm install react-scripts --save"
                 bat "npm test --prefix ./frontend/"
             }
         }
