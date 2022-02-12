@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Lauching NodeJs app'){
             steps {
-                bat "docker-compose up"
+                bat "docker-compose up" 
             }
         }
         stage('Running test'){
