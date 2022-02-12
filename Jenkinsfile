@@ -1,12 +1,12 @@
 pipeline {
     agent any
     stages {
-        stage('lauching NodeJs app'){
+        stage('Lauching NodeJs app'){
             steps {
                 bat "docker-compose up"
             }
         }
-        stage('lauching NodeJs app'){
+        stage('Running test'){
             steps {
                 bat "cd frontend"
                 bat "npm test"
